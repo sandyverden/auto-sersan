@@ -5,7 +5,7 @@ podTemplate(containers: [
     node(POD_LABEL) {
             stage('Test') {
                 container('automation') {
-                            sh 'docker run -it 107126629234.dkr.ecr.ap-southeast-1.amazonaws.com/evermos-automation:latest npm run test'
+                            sh 'docker run 107126629234.dkr.ecr.ap-southeast-1.amazonaws.com/evermos-automation:latest npm run test'
                 } 
             }
             
