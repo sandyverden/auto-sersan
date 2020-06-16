@@ -9,8 +9,7 @@ podTemplate(containers: [
     node(POD_LABEL) {
             stage('Test') {
                 container('automation') {
-                            sh 'ls'
-                            sh 'wdio run wdio.conf.js'
+                            sh 'npm run test'
                 } 
             }
             
