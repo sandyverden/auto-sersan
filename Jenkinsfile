@@ -6,6 +6,7 @@ podTemplate(containers: [
 
             stage('Test') {
                 container('automation') {
+                            sh 'ls'
                             sh 'wdio run wdio.conf.js'
                 } 
             }
